@@ -15,19 +15,19 @@ public class LionTest {
     Feline feline;
 
     @Test
-    public void LionMaleTest() throws Exception {
+    public void lionMaleTest() throws Exception {
         Lion lion = new Lion("Самец");
         Assert.assertTrue( lion.hasMane);
     }
 
     @Test
-    public void LionFemaleTest() throws Exception {
+    public void lionFemaleTest() throws Exception {
         Lion lion = new Lion("Самка");
         Assert.assertFalse( lion.hasMane);
     }
 
     @Test(expected = Exception.class)
-    public void LionOtherTest() throws Exception {
+    public void lionOtherTest() throws Exception {
         Lion lion = new Lion("Иное");
     }
 
